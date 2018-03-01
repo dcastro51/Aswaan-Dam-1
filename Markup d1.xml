@@ -1,0 +1,2027 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="xml"?>
+<!-- History: This is a rough draft of a template that can be used for markup of UEE articles -zb 01/20/10 -->
+<!-- Caption example has been moved to occur after the image -zb 01/20/10 -->
+<!-- to encode an article, you need: 1. the PDF of the article from eScholarship 2. access to the UEEadmin database (ask Zoe or Lisa for URL and logon information) 3. access to DLCS (see Lisa for URL and logon information)-->
+<!-- I have added in the url section and status section to the template; KP -->
+
+<!-- article encoded by Amber Ward, beginning on 04-03-14 --> 
+
+
+<tei:TEI xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xml:id="uee1140">
+    <!-- insert article ID from eScholarship here -->
+
+    <tei:teiHeader>
+        <tei:fileDesc>
+            <tei:titleStmt>
+                <tei:title>Amarna Art</tei:title>
+                <tei:title type="parallel" xml:lang="ar">فن العمارنة</tei:title>
+                <tei:title type="parallel" xml:lang="de">Amarna Kunst</tei:title>
+                <tei:title type="parallel" xml:lang="fr">Art amarnien</tei:title>
+                <tei:author>Laboury, Dimitri</tei:author>
+            </tei:titleStmt>
+            <tei:publicationStmt>
+                <tei:pubPlace>Los Angeles</tei:pubPlace>
+                <tei:publisher>University of California</tei:publisher>
+            </tei:publicationStmt>
+            <!-- note section starts here -->
+            <tei:sourceDesc>
+                <tei:p>This article is part of the online publication, the UCLA Encyclopedia of
+                    Egyptology</tei:p>
+            </tei:sourceDesc>
+        </tei:fileDesc>
+        <tei:profileDesc>
+            <tei:textClass>
+                <tei:keywords scheme="uee_time">
+                    <tei:list>
+                        <tei:item>
+                            <tei:date from="-1352" to="-1336">Amarna Period</tei:date>
+                            <!-- update this as necessary; chronology can be found at
+                            http://www.uee.ucla.edu/contributors/chronology.htm -->
+                            <!-- BC dates have a "-" in front of them; AD dates do not. -->
+                        </tei:item>
+                    </tei:list>
+                </tei:keywords>
+            </tei:textClass>
+            <tei:textClass>
+                <tei:keywords scheme="uee">
+                    <tei:term>revolution</tei:term>
+                    <tei:term>pharaoh-centrism</tei:term>
+                    <tei:term>talatat</tei:term>
+                    <tei:term>Atenism</tei:term>
+                    <!-- Some authors include suggested keywords of their own choosing; if they do not, add the keywords yourself using your best judgement.  Do not repeat words that occur in the title. -->
+                </tei:keywords>
+            </tei:textClass>
+        </tei:profileDesc>
+    </tei:teiHeader>
+    <tei:text>
+        <tei:front>
+            <tei:div>
+                <tei:p>
+                    <tei:ptr
+                        target="http://digital2.library.ucla.edu/viewItem.do?ark=21198/zz0026vj6m"/>
+                    <!-- replace the XXXXs with the Item Ark # for that article, found in DLCS -->
+                </tei:p>
+            </tei:div>
+        </tei:front>
+        <tei:body>
+            <tei:div type="article" xml:base="file:///glosses.xml">
+
+                <tei:head>Amarna Art</tei:head>
+                <tei:byline>Dimitri Laboury</tei:byline>
+                <!-- note that this instance of the author's name is in normal order; exactly as it is on the PDF of the article -->
+
+                <tei:div type="english_abstract">
+                    <tei:p>The art that developed in the reign of Amenhotep IV/Akhenaten, known as
+                        “Amarna art,” has largely been considered revolutionary in the history of
+                        ancient Egyptian art. As such, it has been the subject of much debate and
+                        has generated numerous theories, often contradictory or controversial, and,
+                        in fact, deeply influenced by the history of its modern reception.
+                        Nevertheless, the remaining evidence still permits us to investigate
+                        Amenhotep IV/Akhenaten’s conception of images and art, as well as the
+                        artistic evolution under his reign. From a hermeneutic point of view, Amarna
+                        art can be interpreted as a multi-causal phenomenon, involving an internal
+                        evolution of 18th Dynasty society and art, pharaoh-centrism, and purely
+                        aesthetic factors.</tei:p>
+                    <!-- Note that in the abstract, you do NOT mark up glosses, placenames, or article links.  You DO mark up things like italics, foreign language tags, and book titles.  -->
+                </tei:div>
+
+
+                <tei:div type="arabic_abstract">
+                    <tei:p>« فن العمارنة » يعتبر الفن الذى تطور خلال عھد امنحتب الرابع/أخناتون
+                        والمعروف بإسم يعتبر الى حد كبير تطور ثورى فى تاريخ الفن المصرى القديم فيمثل
+                        ھذا التطور محور الكثير من النقاشات وبنى عليه العديد من النظريات التى غالبا
+                        تكون متناقضة أو مثيرة للجدل وعلى أى حال فإن ھذه النقاشات والنظريات متأثرة
+                        بشدة بتاريخ استقباله الحديث، مع ذلك فإن الادلة المتبقية لا تزال تسمح بفحص
+                        مفھوم امنتحتب الرابع/اخناتون للفن والتصوير، فضلا عن التطور الفنى فى ظل حكمه.
+                        يمكن تفسير فن العمارنة باعتباره ظاھرة متعددة الاسباب والتى تشمل تطور الذاتية
+                        للمجتمع والفن خلال الاسرة الثامنة عشر، دور الفرعون والعوامل الجمالية
+                        البحتة.</tei:p>
+                    <!-- Check Arabic -->
+                </tei:div>
+
+
+                <tei:div type="article">
+                    <tei:p>Amarna art is the designation traditionally used to refer to the
+                        unconventional art developed in the reign of <tei:ref type="gloss"
+                            target="g000161">Amenhotep IV/Akhenaten</tei:ref> (1352 - 1336 BCE). It
+                        was coined after the modern Arabic name for the site of <tei:placeName
+                            key="p000195">el-Amarna</tei:placeName>, where the king built his new
+                        capital, <tei:placeName key="p000195">Akhetaten</tei:placeName>, in the
+                        first third of his year five. So-called Amarna art had nevertheless been
+                        initiated earlier, in the king’s regnal year four, when the cult of the
+                        solar god <tei:ref type="gloss" target="g000296">Aten</tei:ref> was
+                        officially launched at <tei:placeName key="p000224">Karnak</tei:placeName>,
+                        a period that Vergnieux has proposed designating the “proto-Amarna stage”
+                            (<tei:ref type="citation" target="bib075">Vergnieux 1996</tei:ref>;
+                            <tei:ref type="citation" target="bib076">1999: 201 - 202</tei:ref>;
+                            <tei:ref type="citation" target="bib077">Vergnieux and Gondran 1997:
+                            193</tei:ref>). Given the inextricable link between the art instituted
+                        by <tei:ref type="gloss" target="g000161">Amenhotep IV/Akhenaten</tei:ref>
+                        and the new ideology of the cult of <tei:ref type="gloss" target="g000296"
+                            >Aten</tei:ref>, the designation “Atenist art” thus appears more
+                        appropriate.</tei:p>
+
+
+
+                    <tei:div>
+                        <tei:head>The Reception of Atenist Art: A Conundrum</tei:head>
+                        <!-- make sure each paragraph has a unique id beginning with "para" and then incrementing the number -->
+                        <tei:p>The reception of the art of <tei:ref type="gloss" target="g000161"
+                                >Akhenaten’s</tei:ref> time constitutes a remarkable conundrum.
+                                <tei:ref type="gloss" target="g000161">Akhenaten</tei:ref>
+                            <!-- corrected to preferred spelling --> was rejected into collective
+                            oblivion by his successors, and both he and his art were later to be
+                            completely rediscovered. Although the earliest recorded modern encounter
+                            with Amarna art dates back to the beginning of the eighteenth century
+                                (<tei:ref type="citation" target="bib073">van de Walle
+                                1976</tei:ref>), it was not until the scientific expeditions of the
+                            founding fathers of Egyptology in the mid-nineteenth century that the
+                            first appraisal of its particularity was presented (for a good synthesis
+                            of this rediscovery, see <tei:ref type="citation" target="bib035"
+                                >Hornung 1999: 1 - 18</tei:ref>; see also <tei:ref type="citation"
+                                target="bib050">Laboury 2010: 15 - 41</tei:ref>). Since that dawn of
+                            Amarna studies, the beholders of Atenist art have been struck by, and
+                            have consequently tended to fixate upon, two characteristics: the
+                            fluidity of its compositions, in contrast to the very hieratic nature of
+                            traditional Egyptian art, and the unusual, distorted anatomy of the
+                            king’s figure (fig. 1<tei:figure>
+                                <tei:graphic url="21198/zz002hvqdv"/>
+                                <tei:p>Figure 1. Akhenaten and Nefertiti shown in a wall decoration
+                                    in the tomb of Parennefer at Amarna (AT 7).</tei:p>
+                            </tei:figure>), which was first interpreted as an expression of
+                            “realism” according to arthistorical theories of the time &#x2014;
+                            especially those of Johann Joachim Winckelmann (1717 - 1768), who
+                            thought, as did classical authors, that “ancient Egyptian artists
+                            imitated nature as they found it.”</tei:p>
+
+                        <tei:p>Moreover, despite this rather late rediscovery and the absence,
+                            therefore, of a long tradition of distorted interpretations, <tei:ref
+                                type="gloss" target="g000161">Akhenaten</tei:ref> and his art, in
+                            the twentieth century, very quickly became the target of modern
+                            occidental value-projections. These induced a vast number of historical
+                            recreations or inventions based on purely ethnocentric factors (notably
+                                <tei:ref type="citation" target="bib052">Montserrat 2000</tei:ref>).
+                            In this context of cultural appropriation and re-interpretation,
+                            scholars as well as the general public gained their perception of
+                            Atenist art from a rather obsessive focus on the apparently
+                            modern-artlike <tei:foreign xml:lang="egy">Gem-pa-Aten</tei:foreign>
+                            colossi of Amenhotep IV (fig. 2<tei:figure>
+                                <tei:graphic url="21198/zz002hvqfc"/>
+                                <tei:p>Figure 2. Comparison between a colossal head of Akhenaten
+                                    from the Gem-pa-Aten (Luxor Museum J 46) and a sketch by Italian
+                                    artist Amedeo Modigliani (b. 1884).</tei:p>
+                            </tei:figure>) (discovered by Pillet and Chevrier at East
+                                <tei:placeName key="p000224">Karnak</tei:placeName> in 1925) and the
+                            so-called Berlin bust of Nefertiti (unearthed by Borchardt at
+                                <tei:placeName key="p000195">el-Amarna</tei:placeName> in 1912),
+                            which was, since its first public appearance in 1924, immediately
+                            appointed as the epitome of beauty and perfection in the occidental
+                            collective mind. These two icons of the Amarna era&#x2014;almost
+                            inevitably reproduced on the cover of every book pertaining to <tei:ref
+                                type="gloss" target="g000161">Akhenaten</tei:ref> and
+                            Nefertiti&#x2014; have thus become the foci of any analysis of Atenist
+                            art.</tei:p>
+
+                        <tei:p>This history of the modern reception of <tei:ref type="gloss"
+                                target="g000161">Akhenaten’s</tei:ref> art has determined the
+                            current two prevailing interpretations: 1) the “clinical” reading of the
+                            king’s iconography, which, based on the undemonstrated (and often
+                            unquestioned) assumption that Amarna imagery faithfully reproduced
+                            pharaoh’s actual appearance, led to the belief that <tei:ref
+                                type="gloss" target="g000161">Akhenaten</tei:ref> suffered from a
+                            serious physiological disorder (notably <tei:ref type="citation"
+                                target="bib003">Aldred 1962</tei:ref>; <tei:ref type="citation"
+                                target="bib005">Arramon and Crubezy 1994</tei:ref>; <tei:ref
+                                type="citation" target="bib012">Burridge 1996</tei:ref>; <tei:ref
+                                type="citation" target="bib029">Ghalioungui 1947</tei:ref>), an
+                            opinion strongly contradicted by the analysis of the king’s bodily
+                            remains (<tei:ref type="citation" target="bib033">Hawass
+                            2010</tei:ref>); and 2) the theory that a clear opposition existed
+                            between an early exaggerated (or caricatural) style, exemplified by the
+                                <tei:foreign xml:lang="egy">Gem-pa-Aten</tei:foreign> colossi, and,
+                            in the later part of the reign, a softened style, notably attested by
+                            Nefertiti’s so-called Berlin bust (<tei:ref type="citation"
+                                target="bib004">Aldred 1973</tei:ref>; or, for example, <tei:ref
+                                type="citation" target="bib078">Wenig 1975</tei:ref>). A systematic
+                            study of all the material evidence and data relating to the evolution of
+                            art during the reign of <tei:ref type="gloss" target="g000161">Amenhotep
+                                IV/Akhenaten</tei:ref>&#x2014;a study that takes into account all
+                            relevant fragments, not merely the ones considered “impressive” from a
+                            modern, occidental point of view (whether for their beauty or for their
+                            repellent qualities)&#x2014;seriously invites questioning these two
+                            interpretations, which appear to be as hastily and historically shaped
+                            as they are widely accepted.</tei:p>
+                    </tei:div>
+                    <!-- end of subsection -->
+
+                    <tei:div>
+                        <tei:head>Akhenaten’s Conception of Images: Rejecting the
+                            Tradition</tei:head>
+                        <tei:p>Textual, archaeological, and iconographic evidence converge to
+                            demonstrate that <tei:ref type="gloss" target="g000161">Amenhotep
+                                IV/Akhenaten</tei:ref> disputed the traditional Egyptian theology of
+                            images. Ancient Egyptian cultic practices and textual references to art
+                            clearly show that images were considered magically efficacious: they
+                            were perceived as animated embodiments of their models, representing
+                            beings or elements of the beyond that could “come down into them” or
+                            “put them on,” as the texts say. And, just like hieroglyphs, with which
+                            they share a common formal construction, traditional Egyptian images
+                            aimed to depict the essence of things rather than their ephemeral and
+                            incomplete appearances (<tei:ref type="citation" target="bib042">Laboury
+                                1998a</tei:ref>).</tei:p>
+                        <tei:p>Unlike the other deities of the Egyptian pantheon, Amenhotep IV’s
+                            solar god was, after a short time, no longer represented according to
+                            the traditional semi<tei:ref type="gloss" target="g000635"
+                                >anthropomorphic</tei:ref> iconography signifying his essential
+                            nature (see fig. 5a below), but rather as he appeared each day: as a
+                            shining sun. The meaning of this unprecedented metamorphosis is made
+                            clear by the king himself when he addresses the god with the following
+                            words: “Every eye can look at you straight in front of it while you are
+                            [in] the sun disk [<tei:ref type="gloss" target="g000296">the
+                                Aten</tei:ref>] of the day above earth” (<tei:ref type="citation"
+                                target="bib068">Sandman 1938: 95 [14]</tei:ref>; translation by the
+                            author). <tei:ref type="gloss" target="g000161">Akhenaten</tei:ref> also
+                            rejected the very principle of the cult statue, which represented the
+                            central concept of Egyptian imagetheology and served as the ritual
+                            intermediary between man and the divine (<tei:ref type="citation"
+                                target="bib008">Assmann 1991: 50 - 63</tei:ref>; <tei:ref
+                                type="citation" target="bib025">Eschweiler 1994</tei:ref>), by
+                            transforming the traditional, enclosed temple into an open-air structure
+                            (fig. 3<tei:figure>
+                                <tei:graphic url="21198/zz002hvqgw"/>
+                                <tei:p>Figure 3. Visualization of an Atenist temple by Jean-Claude
+                                    Golvin.</tei:p>
+                            </tei:figure>). Here the deity no longer needed an iconic hypostasis to
+                            inhabit his earthly dwelling but could rather be physically&#x2014;and
+                            visibly&#x2014;present by means of his luminosity. Thus the symbolic
+                            iconography of essences was clearly replaced by a representation of
+                            phenomenological appearances. Moreover, the cognitive capacity of an
+                            image to capture the essence of the depicted subject was denied by the
+                            king when he asserted that his god was “the one who shaped himself, with
+                            his arms, and no artist knows him” (<tei:ref type="citation"
+                                target="bib068">Sandman 1938: 111 [7]</tei:ref>; translation by the
+                            author). From an iconographic point of view, the traditional temple-wall
+                            imagery, which endlessly illustrated the ritual exchange between the
+                            king and the deity in a conceptual and generic manner (i.e., without
+                            reference to contingencies of time or space), was supplanted by detailed
+                            and seemingly anecdotal representations of the ritualized life of
+                            pharaoh, almost as if “every eye could look at him straight in front of
+                            it” (fig. 4<tei:figure>
+                                <tei:graphic url="21198/zz002hvqkf"/>
+                                <tei:p>Figure 4. Comparison between traditional temple-wall imagery
+                                    at left (from Hatshepsut’s temple at Deir el- Bahri) and Atenist
+                                    temple-wall imagery at right, where the ritualized life of the
+                                    king is depicted under the sun’s rays (Luxor Museum
+                                    assemblage).</tei:p>
+                            </tei:figure>). The style of these representations, hitherto static and
+                            hieratic, became very fluid and dynamic, often suggesting motion or
+                            displaying other visual effects.</tei:p>
+                        <tei:p>Nevertheless, despite this explicit and revolutionary intention of
+                            rejecting the traditional image-system, most of the principles that had
+                            always defined Egyptian art remained unquestioned in Atenist art. For
+                            instance, on the formal level, the combination of different perspectives
+                            was still commonly used to represent a single object, as was the case
+                            for depictions of architecture or of the human face, still pictured in
+                            profile with one eye shown from the front. More significantly, on the
+                            functional level, the figure of the king, which constituted the very
+                            semantic center of Amarna art production, was still conceived as a
+                            symbolic evocation of his ideological essence. Thus, rather than
+                            yielding an alternative and entirely new system, the artistic revolution
+                            instigated by <tei:ref type="gloss" target="g000161">Amenhotep
+                                IV/Akhenaten</tei:ref> appears as a kind of “window” in the
+                            long-established Egyptian theory of images, a window to another
+                            imageconception that was never fully assumed (<tei:ref type="citation"
+                                target="bib048">Laboury 2008a</tei:ref>), probably&#x2014;at least
+                            to some extent&#x2014;because Atenist ideology did not last long
+                            enough.</tei:p>
+                    </tei:div>
+
+                    <tei:div>
+                        <tei:head>Evolution and Documentation</tei:head>
+                        <tei:p>The preserved documentation relating to the evolution of <tei:ref
+                                type="gloss" target="g000161">Amenhotep IV/Akhenaten’s</tei:ref> art
+                            allows us to detail the successive stages through which this
+                            unconventional art was instituted. 
+                            <tei:figure>
+                                <tei:graphic url="21198/zz002hvqmz"/>
+                                <tei:p>Figure 5. At left, the so-called “Berlin block” (Ägyptisches
+                                    Museum 2072) from Karnak depicting Ra- Horakhty and Amenhotep
+                                    IV. Center: Drawing of the king as depicted in the Theban tomb
+                                    of Kheruef (TT 192). Right: The king as depicted in the tomb of
+                                    Ramose (TT 55).</tei:p>
+                            </tei:figure>
+                            <!-- figure tag moved for aesthetic purposes on UEE site --> 
+                            The commencement of the king’s reign
+                            bore all the signs of a perfect ideological and artistic continuity with
+                            the recent past. For example, the newly crowned Amenhotep IV ordered the
+                            completion of the unfinished monuments of his father, Amenhotep
+                            III&#x2014; i.e., the front door of the third pylon of the
+                                <tei:placeName key="p000351">Temple of Amun-Ra at
+                                Karnak</tei:placeName> (<tei:ref type="citation" target="bib066"
+                                >Sa'ad 1970</tei:ref>), and the entrance structure of the pylon of
+                            the temple at <tei:placeName key="p000293">Soleb</tei:placeName> in
+                            Nubia (<tei:ref type="citation" target="bib069">Schiff Giorgini et al.
+                                1998: pls. 1 - 26</tei:ref>). 
+                            <tei:figure>
+                                <tei:graphic url="21198/zz002hvsc9"/>
+                                <tei:p>Figure 6. At left, stela of Kiya (Edinburgh Royal Museum acc.
+                                    No. 1956.347). At right, graffito from Aswan quarry.</tei:p>
+                            </tei:figure>
+                            <!-- figure tag moved for aesthetic purposes on UEE site -->
+                            However, before having completed the
+                            monumental main-entrance door of the temple of the dynastic god <tei:ref
+                                type="gloss" target="g000635">Amun-Ra</tei:ref> at <tei:placeName
+                                key="p000224">Karnak</tei:placeName>, and before the end of his
+                            regnal year one (<tei:ref type="citation" target="bib028">Gabolde 1998:
+                                24 - 25</tei:ref>), he who designated himself as “the chosen one of
+                            Amun” (<tei:ref type="citation" target="bib068">Sandman 1938: 191,
+                                195</tei:ref>; translation by the author) decided to devote his
+                            energy to the erection of a new cultic structure, still in the
+                                <tei:placeName key="p000224">Karnak</tei:placeName> precinct but
+                            dedicated to another divinity&#x2014;"<tei:ref type="gloss"
+                                target="g000300">Ra-Horakhty</tei:ref> who rejoices in the horizon
+                            in his name of <tei:ref type="gloss" target="g000283">Shu</tei:ref> who
+                            is [in] the solar disk [<tei:ref type="gloss" target="g000296">the
+                                Aten</tei:ref>]” (<tei:ref type="citation" target="bib067">Sa'ad
+                                1974 [Zernikh stelae]</tei:ref>; <tei:ref type="citation"
+                                target="bib068">Sandman 1938: 143 - 144 [Gebel el- Silsila
+                                stela]</tei:ref>; translation by the author)&#x2014;i.e., the deity
+                            that would become known as <tei:ref type="gloss" target="g000296"
+                                >Aten</tei:ref>. The iconography of the blocks from this building,
+                            later dismantled (<tei:ref type="citation" target="bib013">Chappaz
+                                1983</tei:ref>), already reveals the king’s obvious focus on the
+                            solar god, while the figures represented on them, and in contemporaneous
+                            Theban tombs&#x2014;that of Kheruef (TT 192; <tei:ref type="citation"
+                                target="bib024">Epigraphic Survey 1980</tei:ref>), parts of
+                                <tei:placeName key="p000572">Ramose’s tomb</tei:placeName> (TT 55;
+                                <tei:ref type="citation" target="bib021">Davies 1941: pl.
+                                30</tei:ref>), and parts of Parennefer’s tomb (TT 188; <tei:ref
+                                type="citation" target="bib020">Davies 1923: pl.
+                            27h</tei:ref>)&#x2014;are in perfect accordance with the artistic
+                            standards of Amenhotep III’s reign (fig. 5<!-- tag above -->).</tei:p>
+                        <tei:p>The metamorphosis of the sun god and his royal worshiper arose in the
+                            king’s year four. 
+                            The first step of the transformation, which can be
+                            dated to the first half of the year (<tei:ref type="citation"
+                                target="bib050">Laboury 2010: 128 - 130</tei:ref>), was the
+                            enclosure of the god’s name within a double cartouche, as was done for
+                            pharaohs. Only two images are positively datable to this early phase: a
+                            stela of a certain Kiya, now in Edinburgh (Royal Museum acc. no.
+                            1956.347: <tei:ref type="citation" target="bib002">Aldred 1959: 19 - 22,
+                                pl. 3</tei:ref>), and a large graffito in an Aswan granite quarry
+                            (fig. 6<!-- tag above -->; <tei:ref type="citation" target="bib032">Habachi 1965:
+                                85 - 92</tei:ref>, fig. 13). 
+                            <tei:figure>
+                                <tei:graphic url="21198/zz002hvsdt"/>
+                                <tei:p>Figure 7. Top: The so-called “Paris block” (Louvre E
+                                    13482ter) from Karnak. Depicted in close-up bottom left and
+                                    bottom right.</tei:p>
+                            </tei:figure>
+                            <!-- figure tag moved for aesthetic purposes on UEE site -->
+                            They both show the deity’s anatomy
+                            slightly altered, with more curving contours, especially in the
+                            abdominal and pelvic area. Yet, before the last two months of that same
+                            year (regnal year four; <tei:ref type="citation" target="bib028">Gabolde
+                                1998: 26</tei:ref>; <tei:ref type="citation" target="bib031">Goyon
+                                1957: 106 - 107, nos. 90 - 91, pl. 25</tei:ref>; <tei:ref
+                                type="citation" target="bib053">Redford 1963</tei:ref>), the god
+                            relinquished his classic and symbolic semi-<tei:ref type="gloss"
+                                target="g000635">anthropomorphic</tei:ref> iconography to be
+                            depicted according to his visual manifestation as a shining sun (though
+                            with hands at the end of his “rays,” to suggest his actions on
+                            earth)&#x2014;according to an image already attested in literary sources
+                            long before the Atenist age (<tei:ref type="citation" target="bib034"
+                                >Hornung 1971</tei:ref>; for iconographic antecedents, see <tei:ref
+                                type="citation" target="bib054">Redford 1976</tei:ref>). 
+                            <tei:figure>
+                                <tei:graphic url="21198/zz002hvsfb"/>
+                                <tei:p>Figure 8. The king represented in the new Atenist style on
+                                    talatats 154 and 155, from the ninth pylon of the Temple of
+                                    Amun-Ra at Karnak.</tei:p>
+                            </tei:figure>
+                            <!-- figure tage moved for aeshetic purposes on UEE site -->
+                            One of the
+                            first occurrences of this new divine representation appears on a large
+                            block known today as the “Paris block” (Louvre E 13482ter), where
+                            Amenhotep IV is featured twice, in a symmetrical composition in keeping
+                            with the long-established fundamental principles of traditional temple
+                            imagery (fig. 7<!-- tag above -->). 
+                            
+                            However, the body shape&#x2014; this time of the
+                            king&#x2014;is now more sinuous. This physical remodeling quickly led to
+                            a peculiarly elongated royal figure (fig. 8<!-- tag above -->), androgynous rather than feminized (<tei:ref
+                                type="citation" target="bib063">Robins 1996</tei:ref>), visible in
+                            the next phase, a phase distinctive for the invention of <tei:ref
+                                type="gloss" target="g000744"><tei:hi rend="italics"
+                                    >talatat</tei:hi></tei:ref>-technology and of the new open-air
+                            temple architecture exploited to build a gigantic complex in east
+                                <tei:placeName key="p000224">Karnak</tei:placeName> (the
+                                <tei:foreign xml:lang="egy">Gem-pa-Aten</tei:foreign>), where the
+                            king officially inaugurated the new Atenist era with the celebration of
+                            an abnormally early <tei:ref type="gloss" target="g000024">Sed
+                                Festival</tei:ref> (<tei:ref type="citation" target="bib030">Gohary
+                                1990</tei:ref>; <tei:ref type="citation" target="bib055">Redford
+                                1988</tei:ref>; <tei:ref type="citation" target="bib070">Smith and
+                                Redford 1976</tei:ref>; <tei:ref type="citation" target="bib072"
+                                >Traunecker 1986</tei:ref>; <tei:ref type="citation" target="bib075"
+                                >Vergnieux 1996</tei:ref>, <tei:ref type="citation" target="bib076"
+                                >1999</tei:ref>; <tei:ref type="citation" target="bib077">Vergnieux
+                                and Gondran 1997</tei:ref>).</tei:p>
+
+                        <tei:p>From 
+                            <tei:figure>
+                                <tei:graphic url="21198/zz002hvsgv"/>
+                                <tei:p>Figure 9. Top: The king and queen on their way to the
+                                    matrimonial bed, on talatats 31/216 and 31/203 from the ninth
+                                    pylon, Karnak. Bottom: The “heliacal rising” of <tei:ref
+                                        type="gloss" target="g000161">Akhenaten</tei:ref>, on
+                                    talatats re-used in the ninth pylon (originally from the
+                                    Rudj-menu, in the Atenist complex, Karnak).</tei:p>
+                            </tei:figure>
+                            <!-- figure tage moved for aesthetic purposes on UEE site -->
+                            this point on, the entire official iconographic
+                            repertoire&#x2014;in temples, palaces, and even private tombs&#x2014;is
+                            centered on the ritual, or “ritualized,” life of pharaoh, who is shown
+                            “embraced by the sun’s rays,” as Amarna texts describe him (<tei:ref
+                                type="citation" target="bib068">Sandman 1938: 76 [8]</tei:ref>;
+                            translation by the author). 
+                            <tei:figure>
+                                <tei:graphic url="21198/zz002hvshc"/>
+                                <tei:p>Figure 10. “Perspective deformation” of the Gem-pa-Aten
+                                    colossi physiognomy and the geometry of the observer’s
+                                    theoretical perspective.</tei:p>
+                            </tei:figure>
+                            <!-- figure tage moved for aesthetic purposes on UEE site -->
+                            
+                            Vergnieux (<tei:ref type="citation"
+                                target="bib076">Vergnieux 1999: 193 - 194</tei:ref>; <tei:ref
+                                type="citation" target="bib077">Vergnieux and Gondran 1997: 154 -
+                                191</tei:ref>) emphasizes this important iconographic shift from the
+                            traditional interaction between god and king to an exclusive
+                            representation of pharaoh’s actions under the auspices of the divinity
+                            (see fig. 4), a transference that ultimately resulted in the depiction
+                            of sacred, or sanctified, royal intimacy on temple walls (fig. 9<!-- tag above -->; <tei:ref type="citation" target="bib072">Traunecker
+                                1986</tei:ref>) and other religious monuments (<tei:ref
+                                type="citation" target="bib004">Aldred 1973: cat. no. 123</tei:ref>;
+                                <tei:ref type="citation" target="bib027">Freed 1999: 28</tei:ref>,
+                            fig. 13; <tei:ref type="citation" target="bib036">Ikram 1989</tei:ref>;
+                                <tei:ref type="citation" target="bib071">Stevens 2006: 133 -
+                                136</tei:ref>; <tei:ref type="citation" target="bib074">Vassilika
+                                1995: cat. no. 27</tei:ref>)&#x2014;a concept astonishingly similar
+                            to the famous heliacal rising of Louis XIV, thirty centuries
+                            later.</tei:p>
+                        <tei:p>On the basis of the <tei:foreign xml:lang="egy"
+                                >Gem-pa-Aten</tei:foreign> colossi and isolated <tei:ref
+                                type="gloss" target="g000744"><tei:hi rend="italics"
+                                    >talatat</tei:hi></tei:ref> representations, this emerging
+                            Atenist art from <tei:placeName key="p000224">Karnak</tei:placeName> has
+                            often (if not always) 
+                            <tei:figure>
+                                <tei:graphic url="21198/zz002hvsjw"/>
+                                <tei:p>Figure 11. Nefertiti shown on talatat 34/118, from the ninth
+                                    pylon of the Temple of Amun-Ra at Karnak, assemblage A
+                                    0081.</tei:p>
+                            </tei:figure>
+                            <!-- figure tag moved for aesthetic purposes on UEE site -->
+                            been described as excessive, caricatural, and even
+                            grotesque, as opposed to the Amarna art of the second half of the reign,
+                            which depicted Nefertiti with her (apparently) more naturalistic face,
+                            in contrast to the elongated one of <tei:ref type="gloss"
+                                target="g000161">Akhenaten</tei:ref>. Such an evolution is, however,
+                            highly questionable. On the one hand, the <tei:hi rend="italics"
+                                >Gem-pa-Aten</tei:hi> colossi have proved to display deformations
+                            according to the perspective from which they were meant to be viewed by
+                            the observer (fig. 10<!-- tag above -->) from far below, and, as such, they are not fully
+                            representative of the artistic standards of their time (<tei:ref
+                                type="citation" target="bib049">Laboury 2008b</tei:ref>). 
+                            <tei:figure>
+                                <tei:graphic url="21198/zz002hvskd"/>
+                                <tei:p>Figure 12. Comparison between faces of the Gem-pa-Aten
+                                    colossi, photographed at left without perspective correction;
+                                    center, with perspective correction. At right: face of king
+                                    reconstructed from fragments of statues from the Great Aten
+                                    Temple, el-Amarna.</tei:p>
+                            </tei:figure>
+                            <!-- figure tag moved for aesthetic purposes on UEE site -->
+                            On the
+                            other hand, although Nefertiti, like every queen depicted in ancient
+                            Egyptian art, might have been portrayed at first with her husband’s
+                            features (<tei:ref type="citation" target="bib041">Krauss 2005:
+                                136</tei:ref>), large-scale assemblages of <tei:ref type="gloss"
+                                target="g000744"><tei:hi rend="italics">talatats</tei:hi></tei:ref>
+                            from <tei:placeName key="p000224">Karnak</tei:placeName> already show
+                            her with the distinctive physiognomy of the Berlin bust very
+                            early&#x2014;before or, at the latest, during regnal year six (fig. 11<!-- tag above -->; <tei:ref type="citation" target="bib049">Laboury
+                                2008b</tei:ref>, with reference to <tei:ref type="citation"
+                                target="bib076">Vergnieux 1999: 127, pl. 25</tei:ref>).</tei:p>
+                        <tei:p>Moreover, the artistic documentation that can be dated later in the
+                            reign does not show any clear-cut evolution from this proto- Amarna
+                            phase. For example, for statuary, which always allows a more precise
+                            stylistic analysis than do two-dimensional representations, the
+                            following successive groupings can be singled out: 1) the statues made
+                            to adorn the first official buildings erected in <tei:placeName
+                                key="p000195">Akhetaten</tei:placeName> (fig. 12<!-- tag above -->), i.e., the temples of <tei:ref type="gloss"
+                                target="g000296">Aten</tei:ref> and the Great Palace, in preparation
+                            for the move to the new royal residence (thus between the first third of
+                            year five and year eight); 2) the statuary groups that accompanied the
+                            boundary-stelae inscribed with the second proclamation, of year eight,
+                            probably on the occasion of the move to <tei:placeName key="p000195"
+                                >Akhetaten</tei:placeName>; and 3) the sculptors’ models and
+                            unfinished statues left in the workshop of the royal sculptor Thutmose
+                            when the city was abandoned, at the end of the Atenist episode. With the
+                            exception of the design of the eye, which became less stylized and less
+                            almondshaped around year eight, there is no real stylistic evolution
+                            apparent in the above statue-groupings during these 15 years of truly
+                            Atenist art.</tei:p>
+                    </tei:div>
+
+                    <tei:div>
+                        <tei:head>Interpreting Atenist Art</tei:head>
+                        <tei:p>The particularity of Atenist art within the continuum of Egyptian
+                            artistic traditions cannot be simplistically interpreted as the result
+                            of a single, or simple, cause. <tei:ref type="gloss" target="g000161"
+                                >Amenhotep IV/Akhenaten’s</tei:ref> innovative ideas concerning the
+                            status and purpose of representational art account for its emancipation
+                            from the conceptual and essentialist tendencies of classic ancient
+                            Egyptian art, and for the manifestation of a window to a more perceptual
+                            system of visual representation. Like the Atenist ideology that yielded
+                            and shaped it, this new artistic conception was actually rooted in a
+                            cultural evolution, which, inspired by a new metaphysical approach to
+                            reality, led to a questioning of the long-established mindset and the
+                            traditional ways of imaging the world, whose forerunners can be traced
+                            back one century before Amenhotep IV’s birth (<tei:ref type="citation"
+                                target="bib006">Assmann 1983</tei:ref>, <tei:ref type="citation"
+                                target="bib010">1995</tei:ref>).</tei:p>
+                        <tei:p>The absolute pharaoh-centrism of Atenist iconography nevertheless
+                            reveals that this internal cultural evolution was ideologically
+                            commandeered by <tei:ref type="gloss" target="g000161"
+                                >Akhenaten</tei:ref>&#x2014;a fact that, in itself, suffices to
+                            demonstrate that he was the actual instigator of so-called Amarna art
+                                (<tei:ref type="citation" target="bib038">Krauss 1986: 40 -
+                                62</tei:ref>; <tei:ref type="citation" target="bib045">Laboury
+                                1998b: 74 - 77</tei:ref>; <tei:ref type="citation" target="bib068"
+                                >Sandman 1938: 170 [10-1], 171 [12]</tei:ref>). It has been
+                            suggested that this strong and fundamental ideological dimension of
+                                <tei:ref type="gloss" target="g000161">Akhenaten’s</tei:ref> art
+                            inspired the peculiar appearance given to the ruler (<tei:ref
+                                type="citation" target="bib034">Hornung 1971</tei:ref>; <tei:ref
+                                type="citation" target="bib079">Westendorf 1963</tei:ref>). The
+                            rather quick metamorphosis of year four resulted in a notably stylized
+                            manner of depicting the king (see fig. 12); this stylization, succeeding
+                            the “deification style” of his father’s <tei:ref type="gloss"
+                                target="g000024">Sed Festivals</tei:ref> only a decade earlier
+                                (<tei:ref type="citation" target="bib037">Johnson 1998</tei:ref>),
+                            and according to well-established artistic convention, may have served
+                            to signify his extraordinary nature on the occasion of his own <tei:ref
+                                type="gloss" target="g000024">Sed Festival</tei:ref> and in the
+                            following few years. Indeed, just as the iconographic repertoire
+                            sanctified royal life and intimacy, official texts from <tei:placeName
+                                key="p000195">el-Amarna</tei:placeName> confirm that <tei:ref
+                                type="gloss" target="g000161">Amenhotep IV/Akhenaten</tei:ref> was
+                            conceived as the earthly hypostasis of the god <tei:ref type="gloss"
+                                target="g000296">Aten</tei:ref>: he is, in fact, very often
+                            described as “the beautiful child of <tei:ref type="gloss"
+                                target="g000296">Aten</tei:ref>” (<tei:ref type="citation"
+                                target="bib015">Davies 1903: pls. 38, 41</tei:ref>; <tei:ref
+                                type="citation" target="bib016">1905: pls. 21, 36</tei:ref>;
+                                <tei:ref type="citation" target="bib017">1906: pl. 33</tei:ref>;
+                                <tei:ref type="citation" target="bib018">1908a: pls. 15,
+                                25</tei:ref>; <tei:ref type="citation" target="bib019">1908b: pl.
+                                2</tei:ref>; see <tei:ref type="citation" target="bib023"
+                                >Eaton-Krauss 1983</tei:ref> and <tei:ref type="citation"
+                                target="bib026">Feucht 1984</tei:ref> for an iconographic version of
+                            the statement), “his unique son, from his body” (<tei:ref
+                                type="citation" target="bib068">Sandman 1938: 76 [7 - 8]</tei:ref>;
+                            translation by the author), “shaped according to his [the god’s] shape”
+                                (<tei:ref type="citation" target="bib068">Sandman 1938: 83
+                                [6]</tei:ref>; translation by the author), or “the transfigured
+                            image of <tei:ref type="gloss" target="g000296">Aten</tei:ref>”
+                                (<tei:ref type="citation" target="bib017">Davies 1906: pl.
+                                33</tei:ref>; <tei:ref type="citation" target="bib018">1908a: pls.
+                                15, 25</tei:ref>; <tei:ref type="citation" target="bib019">1908b:
+                                pl. 2</tei:ref>). The name “<tei:ref type="gloss" target="g000161"
+                                >Akhenaten</tei:ref>,” adopted by the king between year five and
+                            year six, can also be understood as a play on words: “the transfigured
+                            one of <tei:ref type="gloss" target="g000296">Aten</tei:ref>.” <tei:ref
+                                type="gloss" target="g000161">Akhenaten’s</tei:ref> role as the
+                            provider of all sustenance, like <tei:ref type="gloss" target="g000296"
+                                >Aten</tei:ref>, who is “father and mother of everything he has
+                            created” (<tei:ref type="citation" target="bib068">Sandman 1938: 12 [8 -
+                                12]</tei:ref>; translation by the author), was also emphasized by
+                            his designation as “the great <tei:ref type="gloss" target="g000302"
+                                >Hapy</tei:ref> of the whole land, ka of Egypt” or “[ka] of anyone”
+                            (notably <tei:ref type="citation" target="bib068">Sandman 1938: 5 [4],
+                                16 [9], 32 [9], 37 [9], 39 [11]</tei:ref>; translation by the
+                            author; <tei:ref type="citation" target="bib063">Robins 1996</tei:ref>).
+                            Thus, even if, theoretically, the “perceptual” depiction of appearances,
+                            the king, the central element of Atenist iconography, was still
+                            explicitly presented as a symbol of the profound nature of his divine
+                            genitor.</tei:p>
+                        <tei:p>In addition to this pharaoh-centric dimension that truly
+                            characterizes Amarna art, Atenist imagery is notably distinguished by
+                            its trend toward aestheticizing (exaggerating the figure in order to
+                            approach the perceived ideals of beauty), plainly perceptible in many
+                            small details, such as over-elongated hands with an apparent extra
+                            phalange near the fingertips (fig. 13<tei:figure>
+                                <tei:graphic url="21198/zz002hvsmx"/>
+                                <tei:p>Figure 13. Royal hand depicted on talatat MMA 1985.328.1
+                                    (Gift of Norbert Schimmel, 1985), from el-Amarna, found at
+                                    Hermopolis.</tei:p>
+                            </tei:figure>). As Jan Assmann has stressed (<tei:ref type="citation"
+                                target="bib007">Assmann 1988</tei:ref>), the female figure in Amarna
+                            art, and especially the archetypical one of Nefertiti, appears as a real
+                            rhetoric in images of the ideal of beauty depicted in an
+                            almost-contemporaneous love poem: “the most beautiful one . . . the one
+                            with a long neck . . . whose fingers are [elongated] like lotuses, her
+                            hips are plump and her waist is tight, so that her haunches increase her
+                            beauty” (Papyrus Chester Beatty I). The concept is also relevant to
+                                <tei:ref type="gloss" target="g000161">Akhenaten</tei:ref> (<tei:ref
+                                type="citation" target="bib046">Laboury 2002</tei:ref>), as can be
+                            demonstrated by the study of proportion grids, which enables us to
+                            describe objectively, and according to ancient Egyptian criteria, the
+                            iconographic transfiguration that affected the king’s figure&#x2014;that
+                            is, the change from the traditional 18-square-grid to the Atenist 20-
+                            square-grid (on this grid see <tei:ref type="citation" target="bib056"
+                                >Robins 1983a</tei:ref>, <tei:ref type="citation" target="bib060"
+                                >1985a</tei:ref>, <tei:ref type="citation" target="bib061"
+                                >1985b</tei:ref>; <tei:ref type="citation" target="bib062">1994: 119
+                                - 159</tei:ref>) induced an elongation of the human body in which
+                            two extra squares were inserted at the chest, between the armpits and
+                            the navel, and also at the neck (fig. 14<tei:figure>
+                                <tei:graphic url="21198/zz002hvsnf"/>
+                                <tei:p>Figure 14. Comparison between traditional 18- square
+                                    proportion grid and Atenist 20-square grid.</tei:p>
+                            </tei:figure>). This modification engendered a lengthening of the neck
+                            and an emphasis on the contrast between the waist and the
+                            haunches&#x2014;i.e., precisely the beauty criteria underlined in the
+                            above-quoted love poem. The iconographical androgyny of the king and his
+                            adoption of this feminine beauty should not be too surprising, for he
+                            was considered a divine provider of fertility and prosperity to Egypt,
+                            much like the androgynous <tei:ref type="gloss" target="g000302"
+                                >Hapi</tei:ref>, and like <tei:ref type="gloss" target="g000296"
+                                >Aten</tei:ref>, “the father and mother of everything he has
+                            created.” Moreover, the aesthetic evolution that occurred during the
+                            pre-Amarna 18th Dynasty had already generated a feminization of male
+                            figures and a hyper-feminization of female ones, notably through a
+                            modification of the position and proportion of the haunches (<tei:ref
+                                type="citation" target="bib064">Robins 1997</tei:ref>).</tei:p>
+                        <tei:p>Regarding physiognomy, Rolf Krauss demonstrated in his study of
+                            Nefertiti’s socalled Berlin bust that the “perfect” beauty of the queen
+                            was artificially constructed. He recreated the original design of this
+                            sculptor’s model (<tei:ref type="citation" target="bib047">Laboury
+                                2005</tei:ref>) by projecting a grid composed of a standard Egyptian
+                            unit of measure, “the finger” (1 finger = 1.875 cm), on a 3D-rendering
+                            of the work of art (fig. 15<tei:figure>
+                                <tei:graphic url="21198/zz0026qhk1"/>
+                                <tei:p>Figure 15. Projection of grid composed of the ancient
+                                    Egyptian “finger” (a unit of measurement equal to 1.875 cm) on a
+                                    3D-rendering of Nefertiti’s Berlin bust (Ägyptisches Museum
+                                    21.300).</tei:p>
+                            </tei:figure>), and thus showed that every major facial feature is
+                            positioned on a line or at the intersection of two lines (<tei:ref
+                                type="citation" target="bib039">Krauss 1991a</tei:ref>, <tei:ref
+                                type="citation" target="bib040">1991b</tei:ref>). Moreover, Krauss
+                            also emphasized that the upper part of <tei:ref type="gloss"
+                                target="g000161">Akhenaten’s</tei:ref> and Nefertiti’s respective
+                            faces, from the bridge of the nose to the crown of the forehead, is
+                            exactly identical (fig. 16<tei:figure>
+                                <tei:graphic url="21198/zz002hvsqg"/>
+                                <tei:p>Figure 16. Comparison between profile of 3Drendering of
+                                    Nefertiti’s Berlin bust and 3Drendering of plaster model head of
+                                    Akhenaten (Berlin 21.351), both found in the workshop of royal
+                                    sculptor Thutmose, el-Amarna.</tei:p>
+                            </tei:figure>; <tei:ref type="citation" target="bib041">Krauss
+                                2005</tei:ref>). Clearly, the canonical visage of Nefertiti, as well
+                            as that of her husband, was a purely aesthetic creation, and <tei:ref
+                                type="gloss" target="g000161">Akhenaten</tei:ref> was, in his own
+                            eyes, truly “the beautiful child of <tei:ref type="gloss"
+                                target="g000296">Aten</tei:ref>.”</tei:p>
+                        <tei:p>This purely aesthetic dimension might be explained as a consequence
+                            of the more perceptual tendency of Amarna art, because, as Jan Assmann
+                            wrote, “Perception is exactly what ‘beauty’ means. Beauty is something
+                            to be perceived and not conceived. It is a sensual quality in that it
+                            addresses the senses” (<tei:ref type="citation" target="bib011">Assmann
+                                1996: 69</tei:ref>). However, it also has an ideological meaning,
+                            for Atenist texts insist on the idea that the solar god fills creation
+                            with his light, love, and beauty, these three qualities being identified
+                            with the god’s manifestation on earth. As Nefertiti’s second
+                            name&#x2014; Neferneferuaten (“Beautiful-is-the-beauty-of-the- <tei:ref
+                                type="gloss" target="g000296">Aten”</tei:ref>)&#x2014;seems to
+                            indicate, <tei:ref type="gloss" target="g000296">Aten</tei:ref> was
+                            conceived as the origin and the essence of beauty (<tei:ref
+                                type="citation" target="bib007">Assmann 1988</tei:ref>; <tei:ref
+                                type="citation" target="bib046">Laboury 2002</tei:ref>).</tei:p>
+                        <tei:p>Like the ideology that gave birth to it, Amarna art appears as a
+                            politically oriented radicalization of an internal evolution of Egyptian
+                            civilization during the 18th Dynasty. As such, it was probably doomed to
+                            failure.</tei:p>
+                    </tei:div>
+                    <tei:div>
+                        <tei:head>The Aftermath of Amarna Art</tei:head>
+                        <tei:p>Atenist art, along with Atenism, disappeared progressively during the
+                            reigns of Tutankhamen, Aye, and <tei:ref type="gloss" target="g000538"
+                                >Horemheb</tei:ref> (<tei:ref type="citation" target="bib057">Robins
+                                1983b</tei:ref>, <tei:ref type="citation" target="bib058"
+                                >1984a</tei:ref>, <tei:ref type="citation" target="bib059"
+                                >1984b</tei:ref>). It nevertheless transmitted to post-Amarna art
+                            some of its innovations, notably a more sensual aesthetic and a more
+                            organic, or holistic, composition of single figures as well as of entire
+                            scenes. However, many of its naturalistic developments were
+                            re-integrated in the traditional ancient Egyptian imaging system and
+                            were thus exploited as semiotic means to express symbolic distinctions
+                            (see, for example, <tei:ref type="citation" target="bib065">Russmann
+                                1980</tei:ref>).</tei:p>
+                    </tei:div>
+                </tei:div>
+                <!-- end of article proper -->
+
+
+                <tei:div type="bibliographic_notes">
+                    <!-- not all articles include Bibliographic Notes, but most do.  This div section can be omitted if the article does not have this section. -->
+                    <tei:head>Bibliographic Notes</tei:head>
+                    <tei:p>A good synthesis of the rediscovery of Amarna Art is provided by Hornung
+                            (<tei:ref type="citation" target="bib035">1999: 1 - 18</tei:ref>) and
+                        Laboury (<tei:ref type="citation" target="bib050">2010: 15 - 41</tei:ref>).
+                        The classic reference for the theory of opposing artistic styles in the
+                        early versus later parts of <tei:ref type="gloss" target="g000161">Amenhotep
+                            IV/Akhenaten’s</tei:ref> reign is still Aldred (<tei:ref type="citation"
+                            target="bib004">1973</tei:ref>). For an atlas of the archaeological
+                        sites that have provided documentation of the king’s reign, with comments
+                        and bibliography, see Chappaz et al. (<tei:ref type="citation"
+                            target="bib014">2008: 143 - 170</tei:ref>). Laboury (<tei:ref
+                            type="citation" target="bib050">2010: 127 - 135</tei:ref>) gives a
+                        detailed discussion of the chronology of steps leading to the emergence of
+                        Amenhotep IV’s new tutelary divinity. Assmann (<tei:ref type="citation"
+                            target="bib006">1983</tei:ref>; English translation <tei:ref
+                            type="citation" target="bib010">1995</tei:ref>) constitutes the major
+                        work on the solar theology that was essentially the root of Atenist
+                        ideology. On the distinction between “<tei:ref type="gloss" target="g000296"
+                            >the Aten</tei:ref>” (the common name of the solar disk as a celestial
+                        body) and “<tei:ref type="gloss" target="g000296">Aten</tei:ref>” (the
+                        proper name of the god), see Assmann (<tei:ref type="citation"
+                            target="bib009">1992: 165 - 166</tei:ref>). For a possible allusion to
+                        the father-son relationship between the king and <tei:ref type="gloss"
+                            target="g000296">Aten</tei:ref> on an iconographic level, with reference
+                        to the god Shu, see Abd-ur-Rahman (<tei:ref type="citation" target="bib001"
+                            >1959</tei:ref>) and Assmann (<tei:ref type="citation" target="bib008"
+                            >1991: 251 - 253</tei:ref>). Since Amenhotep III often designated
+                        himself as the (dazzling) sun-disk (<tei:ref type="gloss" target="g000296"
+                            >Aten</tei:ref>), W. Ray Johnson advocated an identification between the
+                        earthly and the divine father of <tei:ref type="gloss" target="g000161"
+                            >Amenhotep IV/Akhenaten</tei:ref> in Atenist ideology, for which see
+                        Johnson (<tei:ref type="citation" target="bib037">1998</tei:ref>). On the
+                        question of the coregency revived on this hypothesis, see Gabolde (<tei:ref
+                            type="citation" target="bib028">1998: 62 - 98</tei:ref>). For a
+                        discussion of Nefertiti’s so-called Berlin bust as a sculptor’s model in the
+                        context of the plaster finds in Thutmoses’ workshop at <tei:placeName
+                            key="p000195">el-Amarna</tei:placeName>, see Laboury (<tei:ref
+                            type="citation" target="bib047">2005</tei:ref>). As underlined by Robins
+                            (<tei:ref type="citation" target="bib062">1994: 139 - 143</tei:ref>),
+                        the new royal canon influenced the depiction of the human body in Atenist
+                        art, although the anatomy of non-royal persons was never rendered as
+                        pronounced as the king’s.</tei:p>
+                </tei:div>
+                <!-- This closes the Bibliographic Notes div -->
+
+
+
+                <tei:div type="references">
+                    <tei:head>References</tei:head>
+                    <tei:p>
+                        <tei:biblStruct xml:id="bib001">
+                            <tei:analytic>
+                                <tei:author>Betts, Paul </tei:author>
+                                <tei:title level="a">The Warden of World Heritage: UNESCO and the Rescue of the Nubian Monuments
+                                </tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:author>Desroches Noblecourt, Christiane</tei:author>
+                                <tei:title>La Grande Nubiade Ou Le Parcours D’une Égyptologue</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>London</tei:pubPlace>
+                                    <tei:publisher>Thames and Hudson</tei:publisher>
+                                    <tei:date>1973</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib002">
+                            <tei:analytic>
+                                <tei:author>Desroches Noblecourt, Christiane</tei:author>
+                                <tei:title level="a">La Grande Nubiade Ou Le Parcours D’une Égyptologue</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Journal of Egyptian Archaeology</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1959</tei:date>
+                                    <tei:biblScope type="pp">19-33</tei:biblScope>
+                                    <tei:biblScope type="vol">45 (1959)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib003">
+                            <tei:analytic>
+                                <tei:author>Aldred, Cyril</tei:author>
+                                <tei:title level="a">The pharaoh Akhenaten: A problem in Egyptology
+                                    and pathology</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Bulletin of the History of Medicine</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1962</tei:date>
+                                    <tei:biblScope type="pp">293-316</tei:biblScope>
+                                    <tei:biblScope type="vol">36(4)(1962)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib004">
+                            <tei:monogr>
+                                <tei:author>Aldred, Cyril</tei:author>
+                                <tei:title>Akhenaten and Nefertiti</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>London</tei:pubPlace>
+                                    <tei:publisher>Thames and Hudson</tei:publisher>
+                                    <tei:date>1973</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib005">
+                            <tei:analytic>
+                                <tei:author>Arramon, Jean-Yves, and Éric Crubezy</tei:author>
+                                <tei:title level="a">Le pharaon Akhénaton: Avait-il une maladie
+                                    auto-immune?</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Synoviale</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1994</tei:date>
+                                    <tei:biblScope type="pp">30-33</tei:biblScope>
+                                    <tei:biblScope type="vol">28(1994)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib006">
+                            <tei:monogr>
+                                <tei:author>Assmann, Jan</tei:author>
+                                <tei:title>Re and Amun: Die Krise des polytheistischen Weltbilden im
+                                    Ägypten der 18. - 20. Dynastie</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Orbis Biblicus et Orientalis 51.
+                                        Freiburg</tei:pubPlace>
+                                    <tei:publisher>Academic Press; Göttingen: Vandenhoeck &amp;
+                                        Ruprecht</tei:publisher>
+                                    <tei:date>1983</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib007">
+                            <tei:analytic>
+                                <tei:author>Assmann, Jan</tei:author>
+                                <tei:title level="a">Ikonographie der Schönheit im alten Ägypten. In
+                                </tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Schöne Frauen-Schöne Männer: Literarische
+                                    Schöneheitsbeschreibungen: 2. Kolloquium der Forschungsstelle
+                                    für europäische Literatur des Mittelalters</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>, ed. Theo Stemmler, pp. 13 - 30.
+                                        Mannheim</tei:pubPlace>
+                                    <tei:publisher>Forschungsstelle für europäische Lyrik des
+                                        Mittelalters</tei:publisher>
+                                    <tei:date>1988</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib008">
+                            <tei:monogr>
+                                <tei:author>Assmann, Jan</tei:author>
+                                <tei:title>Ägypten: Theologie und Frömmigkeit einer frühen
+                                    Hochkultur</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>2nd edition. Stuttgart, Berlin, and
+                                        Köln</tei:pubPlace>
+                                    <tei:publisher>Kohlhammer</tei:publisher>
+                                    <tei:date>1991</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib009">
+                            <tei:monogr>
+                                <tei:author>Assmann, Jan</tei:author>
+                                <tei:title>Akhanyati's theology of light and time</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Proceedings of the Israel Academy of Sciences and Humanities
+                                        7: 4. Jerusalem</tei:pubPlace>
+                                    <tei:publisher>Israel Academy of Sciences and Humanities</tei:publisher>
+                                    <tei:date>1992</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib010">
+                            <tei:monogr>
+                                <tei:author>Assmann, Jan</tei:author>
+                                <tei:title>Egyptian solar religion in the New Kingdom: Re, Amun and
+                                    the crisis of polytheism</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>, trans. by Anthony Alcock. London</tei:pubPlace>
+                                    <tei:publisher>Kegan Paul International. (Originally published 1983 as <tei:hi rend="italics">Re und Amon: Die Krise
+                                        des polytheistischen Weltbilds im Ägypten der 18. - 20. Dynastie.</tei:hi>)</tei:publisher>
+                                    <tei:date>1995</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib011">
+                            <tei:analytic>
+                                <tei:author>Assmann, Jan</tei:author>
+                                <tei:title level="a">Preservation and presentation of self in
+                                    ancient Egyptian portraiture. In </tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Studies in honor of William Kelly
+                                    Simpson</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>, Vol. 1, ed. Peter Der Manuelian, pp. 55 - 81.
+                                        Boston</tei:pubPlace>
+                                    <tei:publisher>Museum of Fine Arts</tei:publisher>
+                                    <tei:date>1996</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib012">
+                            <tei:analytic>
+                                <tei:author>Burridge, Alwyn</tei:author>
+                                <tei:title level="a">Akhenaten: A new perspective: Evidence of a
+                                    genetic disorder in the royal family of 18th Dynasty
+                                    Egypt</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Journal of the Society for the Study of
+                                    Egyptian Antiquities</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1996</tei:date>
+                                    <tei:biblScope type="pp">63-74</tei:biblScope>
+                                    <tei:biblScope type="vol">23 (1996)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib013">
+                            <tei:analytic>
+                                <tei:author>Chappaz, Jean-Luc</tei:author>
+                                <tei:title level="a">Le premier édifice d'Aménophis IV à
+                                    Karnak</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Bulletin de la Société d'égyptologie
+                                    Genève</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1983</tei:date>
+                                    <tei:biblScope type="pp">13-45</tei:biblScope>
+                                    <tei:biblScope type="vol">8 (1983)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib014">
+                            <tei:monogr>
+                                <tei:author>Chappaz, Jean-Luc, Francesco Tiradritti, and Marie
+                                    Vandenbeusch (eds.)</tei:author>
+                                <tei:title>Akhénaton et Néfertiti: Soleil et ombres des
+                                    pharaons</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Milan</tei:pubPlace>
+                                    <tei:publisher>Silvana Editoriale. (Catalog of the exhibition
+                                        presented by the Musée d'art et d'histoire Genève and the
+                                        Palazzo Bricherasio Torino: Oct. 2008 - Feb.
+                                        2009)</tei:publisher>
+                                    <tei:date>2008</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib015">
+                            <tei:monogr>
+                                <tei:author>Davies, Norman de Garis</tei:author>
+                                <tei:title>The rock tombs of el Amarna I: The tomb of
+                                    Meryra</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Archaeological Survey of Egypt 13th Memoir.
+                                        London</tei:pubPlace>
+                                    <tei:publisher>Egypt Exploration Fund</tei:publisher>
+                                    <tei:date>1903</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib016">
+                            <tei:monogr>
+                                <tei:author>Davies, Norman de Garis</tei:author>
+                                <tei:title>The rock tombs of el Amarna II: The tombs of Panehesy and
+                                    Meryra II</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Archaeological Survey of Egypt 14th Memoir.
+                                        London</tei:pubPlace>
+                                    <tei:publisher>Egypt Exploration Fund</tei:publisher>
+                                    <tei:date>1905</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib017">
+                            <tei:monogr>
+                                <tei:author>Davies, Norman de Garis</tei:author>
+                                <tei:title>The rock tombs of el Amarna IV: The tombs of Penthu,
+                                    Mahu, and others</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Archaeological Survey of Egypt 16th Memoir.
+                                        London</tei:pubPlace>
+                                    <tei:publisher>Egypt Exploration Fund</tei:publisher>
+                                    <tei:date>1906</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib018">
+                            <tei:monogr>
+                                <tei:author>Davies, Norman de Garis</tei:author>
+                                <tei:title>The rock tombs of el Amarna VI: The tombs of Parennefer,
+                                    Tutu and Aÿ</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Archaeological Survey of Egypt 18th Memoir.
+                                        London</tei:pubPlace>
+                                    <tei:publisher>Egypt Exploration Fund</tei:publisher>
+                                    <tei:date>1908a</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib019">
+                            <tei:monogr>
+                                <tei:author>Davies, Norman de Garis</tei:author>
+                                <tei:title>The rock tombs of el Amarna V: Smaller tombs and boundary
+                                    stelae</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Archaeological Survey of Egypt 17th Memoir.
+                                        London</tei:pubPlace>
+                                    <tei:publisher>Egypt Exploration Fund</tei:publisher>
+                                    <tei:date>1908b</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib020">
+                            <tei:analytic>
+                                <tei:author>Davies, Norman de Garis</tei:author>
+                                <tei:title level="a">Akhenaten at Thebes</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Journal of Egyptian Archaeology</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1923</tei:date>
+                                    <tei:biblScope type="pp">132-152</tei:biblScope>
+                                    <tei:biblScope type="vol">9 (1923)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib021">
+                            <tei:monogr>
+                                <tei:author>Davies, Norman de Garis</tei:author>
+                                <tei:title>The tomb of the vizier Ramose</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>London</tei:pubPlace>
+                                    <tei:publisher>Egypt Exploration Fund. (Based on preliminary
+                                        work by T. E. Peet.)</tei:publisher>
+                                    <tei:date>1941</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib022">
+                            <tei:monogr>
+                                <tei:author>De Meulenaere, Herman (ed.)</tei:author>
+                                <tei:title>Le règne du soleil: Akhénaton et Néfertiti: Exposition
+                                    organisée par les Ministères de la culture aux Musées royaux
+                                    d'art et d'histoire, Brussels, 17 janvier - 16 mars
+                                    1975</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Brussels</tei:pubPlace>
+                                    <tei:publisher>Musées royaux d'art et d'histoire</tei:publisher>
+                                    <tei:date>1975</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib023">
+                            <tei:analytic>
+                                <tei:author>Eaton-Krauss, Marianne</tei:author>
+                                <tei:title level="a">Eine rundplastische Darstellung Achenatens als
+                                    Kind</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Zeitschrift für Ägyptische Sprache und
+                                    Altertumskunde</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1983</tei:date>
+                                    <tei:biblScope type="pp">127-132</tei:biblScope>
+                                    <tei:biblScope type="vol">110 (1983)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib024">
+                            <tei:monogr>
+                                <tei:author>Epigraphic Survey, The</tei:author>
+                                <tei:title>The tomb of Kheruef: Theban tomb 192</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>The University of Chicago Oriental Institute
+                                        Publications 102. ed. The University of Chicago Oriental
+                                        Institute Epigraphic Survey. Chicago</tei:pubPlace>
+                                    <tei:publisher>Oriental Institute of the University of
+                                        Chicago</tei:publisher>
+                                    <tei:date>1980</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib025">
+                            <tei:monogr>
+                                <tei:author>Eschweiler, Peter</tei:author>
+                                <tei:title>Bildzauber im alten Ägypten: die Verwendung von Bildern
+                                    und Gegenständen in magischen Handlungen nach den Texten des
+                                    Mittleren und Neuen Reiches</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Orbis Biblicus et Orientalis 137.
+                                        Freiburg</tei:pubPlace>
+                                    <tei:publisher>Academic Press; Göttingen: Vandenhoeck &amp;
+                                        Ruprecht</tei:publisher>
+                                    <tei:date>1994</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib026">
+                            <tei:analytic>
+                                <tei:author>Feucht, Erika</tei:author>
+                                <tei:title level="a">Verjüngung und Wiedergeburt</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Studien zur Altägyptischen Kultur</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1984</tei:date>
+                                    <tei:biblScope type="pp">401-417</tei:biblScope>
+                                    <tei:biblScope type="vol">11 (1984)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib027">
+                            <tei:analytic>
+                                <tei:author>Freed, Rita</tei:author>
+                                <tei:title level="a">Introduction. In </tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Pharaohs of the sun: Akhenaten, Nefertiti,
+                                    Tutankhamen</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>, ed. Rita Freed, Yvonne Markowitz, and Sue
+                                        D'Auria, pp. 17 - 37. Boston</tei:pubPlace>
+                                    <tei:publisher>Museum of Fine Arts</tei:publisher>
+                                    <tei:date>1999</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib028">
+                            <tei:monogr>
+                                <tei:author>Gabolde, Marc</tei:author>
+                                <tei:title>D'Akhénaton à Toutânkhamon</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Collection de l'Institut d'archéologie et
+                                        d'histoire de l'antiquité 3. Lyon</tei:pubPlace>
+                                    <tei:publisher>Université Lumière-Lyon 2, Institut d'archéologie
+                                        et d'histoire de l'antiquité</tei:publisher>
+                                    <tei:date>1998</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib029">
+                            <tei:analytic>
+                                <tei:author>Ghalioungui, Paul</tei:author>
+                                <tei:title level="a">A medical study of Akhenaten</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Annales du service des antiquités de
+                                    l’Égypte</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1947</tei:date>
+                                    <tei:biblScope type="pp">29-46</tei:biblScope>
+                                    <tei:biblScope type="vol">47 (1947)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib030">
+                            <tei:monogr>
+                                <tei:author>Gohary, Jocelyn</tei:author>
+                                <tei:title>Akhenaten's Sed-festival at Karnak</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Studies in Egyptology. London</tei:pubPlace>
+                                    <tei:publisher>Kegan Paul International</tei:publisher>
+                                    <tei:date>1990</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib031">
+                            <tei:monogr>
+                                <tei:author>Goyon, Georges</tei:author>
+                                <tei:title>Nouvelles inscriptions rupestres du Wadi
+                                    Hammamat</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Paris</tei:pubPlace>
+                                    <tei:publisher>Imprimerie Nationale</tei:publisher>
+                                    <tei:date>1957</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib032">
+                            <tei:analytic>
+                                <tei:author>Habachi, Labib</tei:author>
+                                <tei:title level="a">Varia from the reign of King
+                                    Akhenaten</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Mitteilungen des Deutschen Archäologischen
+                                    Instituts, Abteilung Kairo</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1965</tei:date>
+                                    <tei:biblScope type="pp">70-92</tei:biblScope>
+                                    <tei:biblScope type="vol">20 (1965)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib033">
+                            <tei:analytic>
+                                <tei:author>Hawass, Zahi, Yehia Gad, et al.</tei:author>
+                                <tei:title level="a">Ancestry and pathology in King Tutankhamun's
+                                    family</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Journal of the American Medical
+                                    Association</tei:title>
+                                <tei:imprint>
+                                    <tei:date>2010</tei:date>
+                                    <tei:biblScope type="pp">639-647</tei:biblScope>
+                                    <tei:biblScope type="vol">303(7) (2010)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib034">
+                            <tei:analytic>
+                                <tei:author>Hornung, Erik</tei:author>
+                                <tei:title level="a">Gedanken zur Kunst der Amarnazeit</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Zeitschrift für Ägyptische Sprache und
+                                    Altertumskunde</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1971</tei:date>
+                                    <tei:biblScope type="pp">74-78</tei:biblScope>
+                                    <tei:biblScope type="vol">97 (1971)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib035">
+                            <tei:monogr>
+                                <tei:author>Hornung, Erik</tei:author>
+                                <tei:title>Akhenaten and the religion of light</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Translated by David Lorton. Ithaca</tei:pubPlace>
+                                    <tei:publisher>Cornell University Press</tei:publisher>
+                                    <tei:date>1999</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib036">
+                            <tei:analytic>
+                                <tei:author>Ikram, Salima</tei:author>
+                                <tei:title level="a">Domestic shrines and the cult of the royal
+                                    family at el-Amarna</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Journal of Egyptian Archaeology</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1989</tei:date>
+                                    <tei:biblScope type="pp">89-101</tei:biblScope>
+                                    <tei:biblScope type="vol">75 (1989)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib037">
+                            <tei:analytic>
+                                <tei:author>Johnson, W. Raymond</tei:author>
+                                <tei:title level="a">Monuments and monumental art under Amenhotep
+                                    III: Evolution and meaning. In </tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Amenhotep III: Perspectives on his
+                                    reign</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>, eds. David O'Connor and Eric Cline, pp. 63-94.
+                                        Ann Arbor</tei:pubPlace>
+                                    <tei:publisher>University of Michigan Press</tei:publisher>
+                                    <tei:date>1998</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib038">
+                            <tei:analytic>
+                                <tei:author>Krauss, Rolf</tei:author>
+                                <tei:title level="a">Der Oberbildhauer Bak und sein Denkstein in
+                                    Berlin</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Jahrbuch der Berliner Museen</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1986</tei:date>
+                                    <tei:biblScope type="pp">5-46</tei:biblScope>
+                                    <tei:biblScope type="vol">28 (1986)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib039">
+                            <tei:analytic>
+                                <tei:author>Krauss, Rolf</tei:author>
+                                <tei:title level="a">Nefertiti: A drawing-board beauty? In
+                                </tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Amarna letters 1: Essays on ancient Egypt, c.
+                                    1390-1310 BC</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>, pp. 46-49. San Francisco</tei:pubPlace>
+                                    <tei:publisher>KMT Communications</tei:publisher>
+                                    <tei:date>1991a</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib040">
+                            <tei:analytic>
+                                <tei:author>Krauss, Rolf</tei:author>
+                                <tei:title level="a">1913 - 1988: 75 Jahre Büste der NofretEte /
+                                    Nefret-iti in Berlin: Zweiter Teil. In </tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Jahrbuch Preußischer Kulturbesitz</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>, Vol. 28, pp. 123-157. Berlin</tei:pubPlace>
+                                    <tei:publisher>Gebrüder Mann Verlag</tei:publisher>
+                                    <tei:date>1991b</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib041">
+                            <tei:analytic>
+                                <tei:author>Krauss, Rolf</tei:author>
+                                <tei:title level="a">Les représentations de Néfertiti et Akhénaton
+                                    sont-elles réalistes? In </tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Akhénaton et l'époque amarnienne</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>, Bibliothèque d'Égypte, Afrique &amp; Orient, ed.
+                                        Marc Gabolde, pp. 135-144. Paris</tei:pubPlace>
+                                    <tei:publisher>Éditions Khéops; Centre
+                                        d'égyptologie</tei:publisher>
+                                    <tei:date>2005</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib042">
+                            <tei:analytic>
+                                <tei:author>Laboury, Dimitri</tei:author>
+                                <tei:title level="a">Fonction et signification de l'image
+                                    égyptienne</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Bulletin de la Classe des Beaux-Arts de
+                                    l'Académie Royale de Belgique Series</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1998a</tei:date>
+                                    <tei:biblScope type="pp">131-148</tei:biblScope>
+                                    <tei:biblScope type="vol">6(9) (1998a)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib045">
+                            <tei:monogr>
+                                <tei:author>Laboury, Dimitri</tei:author>
+                                <tei:title>La statuaire de Thoutmosis III: Essai d'interprétation
+                                    d'un portrait royal dans son context historique</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Aegyptiaca Leodiensia 5. Liège</tei:pubPlace>
+                                    <tei:publisher>Centre d'Informatique de Philosophie et Lettres
+                                        de l'Université de Liège</tei:publisher>
+                                    <tei:date>1998b</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib046">
+                            <tei:analytic>
+                                <tei:author>Laboury, Dimitri</tei:author>
+                                <tei:title level="a">La beauté dans l'art du règne d'Amenhotep
+                                    IV-Akhénaton. In </tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Beautés d'Égypte: "Celles que les ans ne
+                                    peuvent moissonner": Catalogue de l'exposition créée au Musée du
+                                    Malgré-Tout à Treignes (Belgique) du 2 juin au 15 décembre
+                                    2002</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>, ed. Eugène Warmenbol, pp. 51-58.
+                                        Brussels</tei:pubPlace>
+                                    <tei:publisher>CEDARC</tei:publisher>
+                                    <tei:date>2002</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib047">
+                            <tei:analytic>
+                                <tei:author>Laboury, Dimitri</tei:author>
+                                <tei:title level="a">Dans l'atelier du sculpteur Thoutmose. In
+                                </tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">La langue dans tous ses états: Michel Malaise
+                                    in honorem</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>, Acta Orientalia Belgica 18, ed. Christian
+                                        Cannuyer, pp. 289 - 300. Brussels, Liège, Louvain-la-Neuve,
+                                        Leuven</tei:pubPlace>
+                                    <tei:publisher>Société belge d'études orientales</tei:publisher>
+                                    <tei:date>2005</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib048">
+                            <tei:analytic>
+                                <tei:author>Laboury, Dimitri</tei:author>
+                                <tei:title level="a">L'art selon Akhénaton, une révolution dans la
+                                    tradition et l'histoire de l'art pharaonique. In </tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Akhénaton et Néfertiti: Soleil et ombres des
+                                    pharaons</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>, ed. Jean-Luc Chappaz, Francesco Tiradritti, and
+                                        Marie Vandenbeusch, pp. 77 - 85. Milan</tei:pubPlace>
+                                    <tei:publisher>Silvana Editoriale. (Catalog of the exhibition
+                                        presented by the Musée d'art et d'histoire Genève and the
+                                        Palazzo Bricherasio Torino: Oct. 2008 - Feb.
+                                        2009)</tei:publisher>
+                                    <tei:date>2008a</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib049">
+                            <tei:analytic>
+                                <tei:author>Laboury, Dimitri</tei:author>
+                                <tei:title level="a">Colosses et perspective: De la prise en
+                                    considération de la parallaxe dans la statuaire pharaonique de
+                                    grandes dimensions au Nouvel Empire</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Revue d'Égyptologie</tei:title>
+                                <tei:imprint>
+                                    <tei:date>2008b</tei:date>
+                                    <tei:biblScope type="pp">pp. 181-230, pls. 14-30</tei:biblScope>
+                                    <tei:biblScope type="vol">59 (2008b)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib050">
+                            <tei:monogr>
+                                <tei:author>Laboury, Dimitri</tei:author>
+                                <tei:title>Akhénaton</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Les Grands Pharaons. Paris</tei:pubPlace>
+                                    <tei:publisher>Pygmalion</tei:publisher>
+                                    <tei:date>2010</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib051">
+                            <tei:monogr>
+                                <tei:author>Lepsius, Carl Richard</tei:author>
+                                <tei:title>Denkmäler aus Aegypten und Aethiopien: Nach den
+                                    Zeichnungen der von seiner Majestät dem Könige von Preussen
+                                    Friedrich Wilhelm IV nach diesen Ländern gesendeten und in den
+                                    Jahren 1842 - 1845 ausgeführten wissenschaftlichen
+                                    Expedition</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>12 volumes (1849 - 1856). Berlin</tei:pubPlace>
+                                    <tei:publisher>Nicolaische Buchhandlung</tei:publisher>
+                                    <tei:date>1849-</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib052">
+                            <tei:monogr>
+                                <tei:author>Montserrat, Dominic</tei:author>
+                                <tei:title>Akhenaten: History, fantasy and ancient Egypt</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>London and New York</tei:pubPlace>
+                                    <tei:publisher>Routledge</tei:publisher>
+                                    <tei:date>2000</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib053">
+                            <tei:analytic>
+                                <tei:author>Redford, Donald</tei:author>
+                                <tei:title level="a">The identity of the high-priest of Amun at the
+                                    beginning of Akhenaten's reign</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Journal of the American Oriental
+                                    Society</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1963</tei:date>
+                                    <tei:biblScope type="pp">240-241</tei:biblScope>
+                                    <tei:biblScope type="vol">83(2) (1963)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib054">
+                            <tei:analytic>
+                                <tei:author>Redford, Donald</tei:author>
+                                <tei:title level="a">The sun-disc in Akhenaten's program: Its
+                                    worship and antecedents, Part I</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Journal of the American Research Center in
+                                    Egypt</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1976</tei:date>
+                                    <tei:biblScope type="pp">47-61</tei:biblScope>
+                                    <tei:biblScope type="vol">13 (1976)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib055">
+                            <tei:monogr>
+                                <tei:author>Redford, Donald</tei:author>
+                                <tei:title>The Akhenaten Temple Project 2: Rwd-mnw, foreigners and
+                                    inscriptions</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Aegypti Texta Propositaque 1.
+                                        Toronto</tei:pubPlace>
+                                    <tei:publisher>University of Toronto</tei:publisher>
+                                    <tei:date>1988</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib056">
+                            <tei:analytic>
+                                <tei:author>Robins, Gay</tei:author>
+                                <tei:title level="a">Amarna grids 1</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Göttinger Miszellen</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1983a</tei:date>
+                                    <tei:biblScope type="pp">67-72</tei:biblScope>
+                                    <tei:biblScope type="vol">64 (1983a)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib057">
+                            <tei:analytic>
+                                <tei:author>Robins, Gay</tei:author>
+                                <tei:title level="a">Anomalous proportions in the tomb of Haremhab
+                                    (KV 57)</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Göttinger Miszellen</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1983b</tei:date>
+                                    <tei:biblScope type="pp">91-96</tei:biblScope>
+                                    <tei:biblScope type="vol">65 (1983b)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib058">
+                            <tei:analytic>
+                                <tei:author>Robins, Gay</tei:author>
+                                <tei:title level="a">The proportions of figures in the decoration of
+                                    the tombs of Tutankhamun (KV 62) and Ay (KV 23)</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Göttinger Miszellen</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1984a</tei:date>
+                                    <tei:biblScope type="pp">27-32</tei:biblScope>
+                                    <tei:biblScope type="vol">72 (1984a)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib059">
+                            <tei:analytic>
+                                <tei:author>Robins, Gay</tei:author>
+                                <tei:title level="a">Isis, Nephthys, Selket and Neith represented on
+                                    the sarcophagus of Tutankhamun and in the four free-standing
+                                    statues found in KV 62</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Göttinger Miszellen</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1984b</tei:date>
+                                    <tei:biblScope type="pp">21-25</tei:biblScope>
+                                    <tei:biblScope type="vol">72 (1984b)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib060">
+                            <tei:analytic>
+                                <tei:author>Robins, Gay</tei:author>
+                                <tei:title level="a">Amarna grids 3: Standing figures of the king in
+                                    the early style</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Göttinger Miszellen</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1985a</tei:date>
+                                    <tei:biblScope type="pp">47-54</tei:biblScope>
+                                    <tei:biblScope type="vol">84 (1985a)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib061">
+                            <tei:analytic>
+                                <tei:author>Robins, Gay</tei:author>
+                                <tei:title level="a">Amarna grids 2: Treatment of standing figures
+                                    of the queen</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Göttinger Miszellen</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1985b</tei:date>
+                                    <tei:biblScope type="pp">47-54</tei:biblScope>
+                                    <tei:biblScope type="vol">88 (1985b)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib062">
+                            <tei:monogr>
+                                <tei:author>Robins, Gay</tei:author>
+                                <tei:title>Proportion and style in ancient Egyptian art</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Austin</tei:pubPlace>
+                                    <tei:publisher>University of Texas Press; London: Thames and
+                                        Hudson</tei:publisher>
+                                    <tei:date>1994</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib063">
+                            <tei:analytic>
+                                <tei:author>Robins, Gay</tei:author>
+                                <tei:title level="a">The representation of sexual characteristics in
+                                    Amarna art</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Journal of the Society for the Study of
+                                    Egyptian Antiquities</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1996</tei:date>
+                                    <tei:biblScope type="pp">29-41</tei:biblScope>
+                                    <tei:biblScope type="vol">23 (1996)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib064">
+                            <tei:analytic>
+                                <tei:author>Robins, Gay</tei:author>
+                                <tei:title level="a">The "feminization" of the male figure in New
+                                    Kingdom two-dimensional art. In </tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Chief of Seers: Egyptian studies in memory of
+                                    Cyril Aldred</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Studies in Egyptology, ed. Elizabeth Goring,
+                                        Nicholas Reeves, and John Ruffle, pp. 251-265. London and
+                                        New York</tei:pubPlace>
+                                    <tei:publisher>Kegan Paul International with the National Musuem
+                                        of Scotland</tei:publisher>
+                                    <tei:date>1997</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib065">
+                            <tei:analytic>
+                                <tei:author>Russmann, Edna</tei:author>
+                                <tei:title level="a">The anatomy of an artistic convention:
+                                    Representation of the near foot in two dimensions through the
+                                    New Kingdom</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Bulletin of the Egyptological
+                                    Seminar</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1980</tei:date>
+                                    <tei:biblScope type="pp">57-81</tei:biblScope>
+                                    <tei:biblScope type="vol">2 (1980)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib066">
+                            <tei:analytic>
+                                <tei:author>Sa'ad, Ramadan</tei:author>
+                                <tei:title level="a">Les travaux d'Aménophis IV au IIIe pylône du
+                                    Temple d'Amon-Rê à Karnak</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Kêmi: Revue de philologie et d'archéologie
+                                    égyptiennes et coptes</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1970</tei:date>
+                                    <tei:biblScope type="pp">187-193</tei:biblScope>
+                                    <tei:biblScope type="vol">20 (1970)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib067">
+                            <tei:analytic>
+                                <tei:author>Sa'ad, Ramadan</tei:author>
+                                <tei:title level="a">The stelae of Zernikh: Recent documentation and
+                                    information</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Mitteilungen des Deutschen Archäologischen
+                                    Instituts, Abteilung Kairo</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1974</tei:date>
+                                    <tei:biblScope type="pp">74-76</tei:biblScope>
+                                    <tei:biblScope type="vol">30 (1974)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib068">
+                            <tei:monogr>
+                                <tei:author>Sandman, Maj</tei:author>
+                                <tei:title>Texts from the time of Akhenaten</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Bibliotheca Aegyptiaca 8. Brussels</tei:pubPlace>
+                                    <tei:publisher>Fondation égyptologique Reine
+                                        Élisabeth</tei:publisher>
+                                    <tei:date>1938</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib069">
+                            <tei:monogr>
+                                <tei:author>Schiff Giorgini, Michela, Clément Robichon, et al.
+                                    (eds.)</tei:author>
+                                <tei:title>Soleb V: Le temple: Bas-reliefs et
+                                    inscriptions</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Publications de l'Institut français d'archéologie
+                                        orientale 807. Cairo</tei:pubPlace>
+                                    <tei:publisher>Institut français d'archéologie
+                                        orientale</tei:publisher>
+                                    <tei:date>1998</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib070">
+                            <tei:monogr>
+                                <tei:author>Smith, Ray Winfield, and Donald Redford</tei:author>
+                                <tei:title>The Akhenaten Temple Project 1: Initial
+                                    discoveries</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Warminster</tei:pubPlace>
+                                    <tei:publisher>Aris &amp; Phillips</tei:publisher>
+                                    <tei:date>1976</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib071">
+                            <tei:monogr>
+                                <tei:author>Stevens, Anna K.</tei:author>
+                                <tei:title>Private religion at Amarna: The material
+                                    evidence</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>British Archaeological Reports International
+                                        Series 1587. Oxford</tei:pubPlace>
+                                    <tei:publisher>Archaeopress</tei:publisher>
+                                    <tei:date>2006</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib072">
+                            <tei:analytic>
+                                <tei:author>Traunecker, Claude</tei:author>
+                                <tei:title level="a">Aménophis IV et Néfertiti: Le couple royal
+                                    d'après les talatates du IXe pylône de Karnak</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Bulletin de la Société française
+                                    d'égyptologie</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1986</tei:date>
+                                    <tei:biblScope type="pp">17-44</tei:biblScope>
+                                    <tei:biblScope type="vol">107 (1986)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib073">
+                            <tei:analytic>
+                                <tei:author>van de Walle, Baudouin</tei:author>
+                                <tei:title level="a">La découverte d'Amarna et
+                                    d'Akhénaton</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Revue d'Égyptologie</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1976</tei:date>
+                                    <tei:biblScope type="pp">7-24</tei:biblScope>
+                                    <tei:biblScope type="vol">28 (1976)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib074">
+                            <tei:monogr>
+                                <tei:author>Vassilika, Eleni</tei:author>
+                                <tei:title>Egyptian art</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Cambridge and New York</tei:pubPlace>
+                                    <tei:publisher>Cambridge University Press</tei:publisher>
+                                    <tei:date>1995</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib075">
+                            <tei:analytic>
+                                <tei:author>Vergnieux, Robert</tei:author>
+                                <tei:title level="a">Les premières années du règne d'Aménophis IV
+                                    (ou le proto-amarnien)</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Comptes rendus de l'Académie des Inscriptions
+                                    et Belles-Lettres</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1996</tei:date>
+                                    <tei:biblScope type="pp">813-820</tei:biblScope>
+                                    <tei:biblScope type="vol">3 (July) (1996)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib076">
+                            <tei:monogr>
+                                <tei:author>Vergnieux, Robert</tei:author>
+                                <tei:title>Recherches sur les monuments thébains d'Amenhotep IV à
+                                    l'aide d'outils informatiques: Méthodes et résultats</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Cahiers de la Société d'Égyptologie Génève 4.
+                                        Geneva</tei:pubPlace>
+                                    <tei:publisher>Société d'Égyptologie</tei:publisher>
+                                    <tei:date>1999</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib077">
+                            <tei:monogr>
+                                <tei:author>Vergnieux, Robert, and Michel Gondran</tei:author>
+                                <tei:title>Aménophis IV et les pierres du soleil: Akhénaton
+                                    retrouvé</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>Paris</tei:pubPlace>
+                                    <tei:publisher>Arthaud</tei:publisher>
+                                    <tei:date>1997</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib078">
+                            <tei:analytic>
+                                <tei:author>Wenig, Stephen</tei:author>
+                                <tei:title level="a">Amarna-Kunst. In </tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Lexikon der Ägyptologie</tei:title>
+                                <tei:imprint>
+                                    <tei:pubPlace>, Vol. 1 (columns 174 - 181), ed. Wolfgang Helck,
+                                        and Eberhard Otto. Wiesbaden</tei:pubPlace>
+                                    <tei:publisher>Harrassowitz</tei:publisher>
+                                    <tei:date>1975</tei:date>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                        <tei:biblStruct xml:id="bib079">
+                            <tei:analytic>
+                                <tei:author>Westendorf, Wolfhardt</tei:author>
+                                <tei:title level="a">Amenophis IV in Urgottgestalt</tei:title>
+                            </tei:analytic>
+                            <tei:monogr>
+                                <tei:title level="j">Pantheon</tei:title>
+                                <tei:imprint>
+                                    <tei:date>1963</tei:date>
+                                    <tei:biblScope type="pp">269-277</tei:biblScope>
+                                    <tei:biblScope type="vol">21(5) (1963)</tei:biblScope>
+                                </tei:imprint>
+                            </tei:monogr>
+                        </tei:biblStruct>
+                    </tei:p>
+                </tei:div>
+                <!-- closes the References div -->
+
+
+
+
+                <tei:div type="image_credits">
+                    <!-- Not all articles have image credits. This div can be omitted if your article does not have images -->
+
+                    <!-- TAG BIB IN IMAGE CREDITS -->
+
+                    <tei:head>Image Credits</tei:head>
+                    <tei:p>Figure 1. Akhenaten and Nefertiti shown in a wall decoration in the tomb
+                        of Parennefer at Amarna (AT 7). (<tei:ref type="citation" target="bib051"
+                            >Lepsius Denkmäler III: pl. 109</tei:ref>.)</tei:p>
+                    <tei:p/>
+                    <tei:p>Figure 2. Comparison between a colossal head of Akhenaten from the
+                            <tei:foreign xml:lang="egy">Gem-pa-Aten</tei:foreign> (Luxor Museum J
+                        46) and a sketch by Italian artist Amedeo Modigliani (b. 1884). Colossal
+                        head: De Meulenaere (<tei:ref type="citation" target="bib022">1975:
+                            63</tei:ref>.)</tei:p>
+                    <tei:p/>
+                    <tei:p>Figure 3. Visualization of an Atenist temple by Jean-Claude Golvin.
+                            (<tei:ref type="citation" target="bib077">Vergnieux and Gondran 1997:
+                            114</tei:ref>.)</tei:p>
+                    <tei:p/>
+                    <tei:p>Figure 4. Comparison between traditional temple-wall imagery at left
+                        (from Hatshepsut’s temple at Deir el-Bahri) and Atenist temple-wall imagery
+                        at right, where the ritualized life of the king is depicted under the sun’s
+                        rays (Luxor Museum assemblage). Photographs by the author.</tei:p>
+                    <tei:p/>
+                    <tei:p>Figure 5. At left, the so-called “Berlin block” (Ägyptisches Museum 2072)
+                        from Karnak depicting Ra- Horakhty and Amenhotep IV. Center: Drawing of the
+                        king as depicted in the Theban tomb of Kheruef (TT 192). Right: The king as
+                        depicted in the tomb of Ramose (TT 55). Photograph at left by the author;
+                        center drawing: Epigraphic Survey (<tei:ref type="citation" target="bib024"
+                            >1980: pl. 9</tei:ref>); photograph at right by the author.</tei:p>
+                    <tei:p/>
+                    <tei:p>Figure 6. At left, stela of Kiya (Edinburgh Royal Museum acc. no.
+                        1956.347). At right, graffito from Aswan quarry. Stela: Aldred (<tei:ref
+                            type="citation" target="bib002">1959: pl. 3</tei:ref>); graffito:
+                        Habachi (<tei:ref type="citation" target="bib032">1965: fig.
+                        13</tei:ref>).</tei:p>
+                    <tei:p/>
+                    <tei:p>Figure 7. Top: The so-called “Paris block” (Louvre E 13482ter) from
+                        Karnak. Depicted in close-up bottom left and bottom right. Top photograph
+                        courtesy of the Louvre Museum; photographs bottom left and bottom right by
+                        the author.</tei:p>
+                    <tei:p/>
+                    <tei:p>Figure 8. The king represented in the new Atenist style on <tei:hi
+                            rend="italics">talatats</tei:hi> 154 and 155, from the ninth pylon of
+                        the Temple of Amun-Ra at Karnak. (<tei:ref type="citation" target="bib022"
+                            >De Meulenaere 1975: 100</tei:ref>.)</tei:p>
+                    <tei:p/>
+                    <tei:p>Figure 9. Top: The king and queen on their way to the matrimonial bed, on
+                        talatats 31/216 and 31/203 from the ninth pylon, Karnak. Bottom: The
+                        “heliacal rising” of Akhenaten, on <tei:hi rend="italics">talatats</tei:hi>
+                        re-used in the ninth pylon (originally from the Rudj-menu, in the Atenist
+                        complex, Karnak). Top: Traunecker (<tei:ref type="citation" target="bib072"
+                            >1986: 36</tei:ref>); bottom: Vergnieux and Gondran (<tei:ref
+                            type="citation" target="bib077">1997: 191</tei:ref>).</tei:p>
+                    <tei:p/>
+                    <tei:p>Figure 10. “Perspective deformation” of the <tei:foreign xml:lang="egy"
+                            >Gem-pa-Aten</tei:foreign> colossi physiognomy and the geometry of the
+                        observer’s theoretical perspective. (<tei:ref type="citation"
+                            target="bib049">Laboury 2008b</tei:ref>.)</tei:p>
+                    <tei:p/>
+                    <tei:p>Figure 11. Nefertiti shown on <tei:hi rend="italics">talatat</tei:hi>
+                        34/118, from the ninth pylon of the Temple of Amun-Ra at Karnak, assemblage
+                        A 0081. (<tei:ref type="citation" target="bib076">Vergnieux 1999: 127, pl.
+                            25</tei:ref>.)</tei:p>
+                    <tei:p/>
+                    <tei:p>Figure 12. Comparison between faces of the <tei:foreign xml:lang="egy"
+                            >Gem-pa-Aten</tei:foreign> colossi, photographed at left without
+                        perspective correction; center, with perspective correction. At right: face
+                        of king reconstructed from fragments of statues from the Great Aten Temple,
+                        el-Amarna. (<tei:ref type="citation" target="bib049">Laboury 2008b: pl.
+                            33</tei:ref>.)</tei:p>
+                    <tei:p/>
+                    <tei:p>Figure 13. Royal hand depicted on <tei:hi rend="italics">talatat</tei:hi>
+                        MMA 1985.328.1 (Gift of Norbert Schimmel, 1985), from el- Amarna, found at
+                        Hermopolis. (<tei:ref type="citation" target="bib014">Chappaz et al. 2008:
+                            80</tei:ref>.)</tei:p>
+                    <tei:p/>
+                    <tei:p>Figure 14. Comparison between traditional 18-square proportion grid and
+                        Atenist 20-square grid. (<tei:ref type="citation" target="bib062">Robins
+                            1994: 90, 127</tei:ref>.)</tei:p>
+                    <tei:p/>
+                    <tei:p>Figure 15. Projection of grid composed of the ancient Egyptian “finger”
+                        (a unit of measurement equal to 1.875 cm) on a 3D-rendering of Nefertiti’s
+                        Berlin bust (Ägyptisches Museum 21.300). (<tei:ref type="citation"
+                            target="bib039">Krauss 1991a: 148-149</tei:ref>.)</tei:p>
+                    <tei:p/>
+                    <tei:p>Figure 16. Comparison between profile of 3D-rendering of Nefertiti’s
+                        Berlin bust and 3D-rendering of plaster model head of Akhenaten (Berlin
+                        21.351), both found in the workshop of royal sculptor Thutmose, el-Amarna.
+                            (<tei:ref type="citation" target="bib041">Krauss 2005:
+                        142</tei:ref>.)</tei:p>
+                </tei:div>
+                <!-- closes image credits div -->
+
+
+            </tei:div>
+            <!-- closes division for the entire article -EM -->
+
+        </tei:body>
+    </tei:text>
+</tei:TEI>
